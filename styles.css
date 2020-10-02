@@ -145,6 +145,7 @@ body {
      top: 5%;
      width: 60%;
      margin: 0 20%;
+     pointer-events: none;
  }
 
 .details1 h2 {
@@ -252,6 +253,7 @@ body {
      display: flex;
      justify-content: center;
      align-items: center;
+    pointer-events: none;
  }
 
  .details2 h2 {
@@ -320,6 +322,7 @@ body {
     width: 400px;
     height: 250px;
     background-color: rgba(250, 250, 250, 0.5);
+    pointer-events: none;
 }
 
 .schedule h1 {
@@ -350,6 +353,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    pointer-events: none;
 }
 
 footer img {
