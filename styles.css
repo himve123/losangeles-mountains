@@ -1,0 +1,395 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,600&family=Roboto:ital,wght@1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eee;
+}
+
+.window-container1 {
+    width: 100vw;
+    height: 92vh;
+    position: relative;
+    display: flex;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.window-container1 .logo {
+    position: absolute;
+    top: 2%;
+    left: 17%;
+    cursor: pointer;
+}
+
+.window-container1 nav {
+    position: absolute;
+    top: 3.5%;
+    right: 20%;
+}
+
+.window-container1 nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.window-container1 nav li a {
+    text-decoration: underline;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+.window-container1 nav li a:hover {
+    color: #111;
+    font-size: 18px;
+}
+
+.navbar {
+    width: 100%;
+    height: 7vh;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(250, 250, 250, 0.5);
+    width: 100vw;
+    transform: scaleY(0.8);
+}
+
+.logotext {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    left: 17%;
+    transform: scale(0.8);
+    cursor: pointer;
+}
+
+.navbar .nav-two {
+    position: absolute;
+    right: 20%;
+}
+
+.navbar ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+ .navbar ul li a {
+     text-decoration: none;
+     color: #414f6b;
+     font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    transition: all 0.2s ease;
+ }
+
+.navbar ul li a:hover {
+    color: #111;
+    font-size: 18px;
+}
+
+ @media screen and (max-width: 800px) {
+   
+    .window-container1 .logo {
+        left: 5%;
+    }
+    .navbar .nav-two {
+        right: 3%;
+    }
+    .logotext {
+        left: 1%;
+        transform: scale(0.7);
+    }
+}
+
+
+ .window-container2 {
+     width: 100vw;
+     height: 92vh;
+     position: relative;
+ }
+
+ .window-container2 .bg-img {
+     width: 100vw;
+     height: 92vh;
+ }
+
+ .window-container2 .bg-img img  {
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+ }
+
+ .details1 {
+     position: absolute;
+     top: 5%;
+     width: 60%;
+     margin: 0 20%;
+ }
+
+.details1 h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #414f6b;
+}
+
+.details1 h2::before {
+    content: '01.';
+    font-size: 120px;
+    color: rgba(65, 79, 107, 0.5);
+}
+
+.details1 p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    margin-left: 40px;
+}
+
+ .slider-bar {
+     position: absolute;
+     width: 100vw;
+     height: 20vh;
+     bottom: 0;
+     background-color: rgba(65, 79, 107, 0.75);
+ }
+
+ .image {
+     width: 54%;
+     height: 65%;
+     margin: 1.5vh 23%;
+ }
+
+ .image img {
+     width: 100%;
+     height: 100%;
+ }
+
+.indicator {
+    display: flex;
+    justify-content: space-around;
+}
+
+ .dot {
+     position: absolute;
+     bottom: 0;
+     margin: 5px 5px;
+     width: 7px;
+     height: 7px;
+     border-radius: 50%;
+     background-color: #ddd;
+     cursor: pointer;
+ }
+
+ .active {
+          border: 2px solid #000;
+ }
+
+ .one {
+    left: 48%;
+ }
+
+ .three {
+     right: 48%;
+ }
+
+ @media screen and (max-width: 800px) {
+    .details1 {
+        width: 80%;
+        margin: auto;
+    }
+    .details1 h2::before {
+        content: '01.';
+        font-size: 80px;
+        margin-left: 20px;
+    }
+    .slider-bar {
+        height: 10vh;
+    }
+    .image {
+        width: 60%;
+        height: 71%;
+        margin: 1.5vh 20%;
+    }
+    .one {
+        left: 43%;
+     } 
+     .three {
+         right: 43%;
+     }
+ }
+
+
+ .window-container3 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+ }
+
+.details2 {
+     width: 70%;
+     height: 16vh;
+     margin: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .details2 h2 {
+    margin: 0 35px 0 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #414f6b;
+}
+
+.details2 h2::before {
+    content: '02.';
+    font-size: 104px;
+    color: rgba(65, 79, 107, 0.5);
+}
+
+ .details2 p {
+     font-size: 10px;
+     font-family: 'Nunito', sans-serif;
+     font-size: 16px;
+ }
+
+ .bar {
+     width: 100vw;
+     height: 4vh;
+     background-color: #414f6b;
+ }
+
+ .bar .button {
+     display: flex;
+     position: absolute;
+     left: 20%;
+ }
+
+ .bar .button .btn .btn-1, .bar .button .btn .btn-2 {
+     padding: 0 30px;
+ }
+
+.bar .button a {
+    color: #111;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.bar .button a:hover {
+    color: #414f6b;
+    background-color: #111;
+    text-decoration: underline;
+}
+
+.bg-img2 {
+    position: relative;
+    width: 100vw;
+    height: 72vh;
+}
+
+.bg-img2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.schedule {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    width: 400px;
+    height: 250px;
+    background-color: rgba(250, 250, 250, 0.5);
+}
+
+.schedule h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    padding: 30px 0 10px 40px;
+    color: #414f6b;
+}
+
+table {
+    padding: 2px 0 0 45px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.window-container3 .schedule table tr .col-two {
+    padding-left: 70px;
+}
+
+.window-container3 .schedule table .third-row {
+    padding: 25px 0;
+}
+
+footer {
+    position: absolute;
+    width: 100vw;
+    height: 8vh;
+    background-color: #414f6b;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer img {
+    transform: scale(0.9);
+}
+
+footer p {
+    color: #333;
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.bg-div {
+    width: 100vw;
+    height: 80vh;
+    background-color: #414f6b;
+}
+
+@media screen and (max-width: 800px) {
+    footer p {
+        font-size: 8px;
+    }
+ .bar .button {
+     left: 10%;
+ } 
+ .schedule {
+     left: 10px;
+     top: 50%;
+     transform: scale(0.7);
+ }
+ .details2 {
+     display: flex;
+     flex-direction: column;
+     height: 36vh;
+     width: 80%;
+ }
+ .bg-img2 {
+     height: 52vh;
+ }
+ .bg-div {
+     height: 53vh;
+ }
+}
